@@ -2,10 +2,11 @@
 import jsondata from './data.json' assert {type: "json"}
 let data = document.getElementById('filter')
 let tbody = document.getElementById('tbody')
+let loadBtn = document.getElementById('loadBtn')
 // listeners stats
-data.addEventListener('change', (e) => {
+loadBtn.addEventListener('click', (e) => {
     tbody.innerHTML = ''
-    filters(e.target.value)
+    filters(data.value)
 })
 // filter logic starts here
 function filters(status) {

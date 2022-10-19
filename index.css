@@ -56,3 +56,10 @@ td {
 th {
     font-size: 15px;
 }
+#loadBtn{
+    padding: 10px 45px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    transform: translateX(30px);
+    cursor: pointer;
+}
