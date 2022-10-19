@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <select name="filter" id="filter">
+            <option value="">select</option>
+            <option value="retired">retired</option>
+            <option value="active">active</option>
+            <option value="unknown">unknown</option>
+            <option value="destroyed">destroyed</option>
+        </select>
+    </header>
+    <table>
+        <thead>
+            <tr>
+                <th>capsule_serial</th>
+                <th>capsule_id</th>
+                <th>status</th>
+                <th>original_launch_unix</th>
+                <th>landings</th>
+                <th>type</th>
+                <th>details</th>
+                <th>reuse_count</th>
+                <th>missions</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
